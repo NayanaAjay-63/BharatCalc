@@ -7,7 +7,7 @@ const SwissLogo = () => (
       <div className="absolute inset-0 bg-primary rounded-full" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-background rounded-sm rotate-45" />
     </div>
-    <span className="font-bold text-lg tracking-tight">CalcSuite</span>
+    <span className="font-bold text-lg tracking-tight">BharatCalc</span>
   </div>
 );
 
@@ -29,22 +29,22 @@ export const Footer: React.FC = () => {
             <h4 className="font-semibold mb-4">Calculators</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/calculator/emi" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/calculators/finance/emi" className="text-muted-foreground hover:text-foreground transition-colors">
                   EMI Calculator
                 </Link>
               </li>
               <li>
-                <Link to="/calculator/bmi" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/calculators/health/bmi" className="text-muted-foreground hover:text-foreground transition-colors">
                   BMI Calculator
                 </Link>
               </li>
               <li>
-                <Link to="/calculator/percentage" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/calculators/basic/percentage" className="text-muted-foreground hover:text-foreground transition-colors">
                   Percentage Calculator
                 </Link>
               </li>
               <li>
-                <Link to="/calculator/age" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/calculators/datetime/age" className="text-muted-foreground hover:text-foreground transition-colors">
                   Age Calculator
                 </Link>
               </li>
@@ -56,22 +56,22 @@ export const Footer: React.FC = () => {
             <h4 className="font-semibold mb-4">Utilities</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/utility/pin-lookup" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/calculators/api/pin-lookup" className="text-muted-foreground hover:text-foreground transition-colors">
                   PIN Code Lookup
                 </Link>
               </li>
               <li>
-                <Link to="/utility/ifsc-lookup" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/calculators/api/ifsc-lookup" className="text-muted-foreground hover:text-foreground transition-colors">
                   IFSC Lookup
                 </Link>
               </li>
               <li>
-                <Link to="/converter/length" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Unit Converters
+                <Link to="/tools/PasswordGenerator" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Password Generator
                 </Link>
               </li>
               <li>
-                <Link to="/calculator/qr-generator" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/tools/QRCodeGenerator" className="text-muted-foreground hover:text-foreground transition-colors">
                   QR Generator
                 </Link>
               </li>
@@ -103,10 +103,10 @@ export const Footer: React.FC = () => {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} CalcSuite. All rights reserved.
+            © {new Date().getFullYear()} BharatCalc. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
-            Crafted with Swiss precision ✦
+            Sabka Saath, Sabka Vikas, Sabka Vishwas, Sabka Prayas ✦
           </p>
         </div>
       </div>

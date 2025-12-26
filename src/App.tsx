@@ -16,9 +16,8 @@ import PrivacyPage from "./pages/PrivacyPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 import ProfilePage from "./pages/ProfilePage";
 
-// Auth Pages
-import LoginPage from "./pages/auth/LoginPage";
-import SignupPage from "./pages/auth/SignupPage";
+
+
 
 // Calculator Components
 import { CalculatorLayout } from "./components/shared/CalculatorLayout";
@@ -53,6 +52,7 @@ import { PinCodeLookup } from "./components/utilities/PinCodeLookup";
 import { IFSCLookup } from "./components/utilities/IFSCLookup";
 import { QRCodeGenerator } from "./components/tools/QRCodeGenerator";
 import { PasswordGenerator } from "./components/tools/PasswordGenerator";
+import TermsPage from "./pages/TermsPage";
 
 const queryClient = new QueryClient();
 
@@ -115,12 +115,10 @@ const App = () => (
             <Route path="/calculators/api/ifsc-lookup" element={<CalculatorLayout title="IFSC Code Lookup" description="Get bank details from IFSC" category="API Utilities"><IFSCLookup /></CalculatorLayout>} />
             
             {/* Misc Tools */}
-            <Route path="/tools/qr-generator" element={<CalculatorLayout title="QR Code Generator" description="Generate QR codes instantly" category="Tools"><QRCodeGenerator /></CalculatorLayout>} />
-            <Route path="/tools/password-generator" element={<CalculatorLayout title="Password Generator" description="Generate secure passwords" category="Tools"><PasswordGenerator /></CalculatorLayout>} />
-            
-            {/* Auth */}
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/tools/QRCodeGenerator" element={<CalculatorLayout title="QR Code Generator" description="Generate QR codes instantly" category="Tools"><QRCodeGenerator /></CalculatorLayout>} />
+            <Route path="/tools/PasswordGenerator" element={<CalculatorLayout title="Password Generator" description="Generate secure passwords" category="Tools"><PasswordGenerator /></CalculatorLayout>} />
+            <Route path="/terms" element={<TermsPage />} />
+
             
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -126,8 +126,8 @@ export const categories: Category[] = [
     description: 'Handy tools for everyday use.',
     icon: 'Wrench',
     calculators: [
-      { title: 'QR Code Generator', description: 'Generate QR codes instantly', href: '/tools/qr-generator', category: 'tools', keywords: ['qr', 'barcode', 'scan'] },
-      { title: 'Password Generator', description: 'Generate secure passwords', href: '/tools/password-generator', category: 'tools', keywords: ['password', 'security', 'random'] },
+      { title: 'QR Code Generator', description: 'Generate QR codes instantly', href: '/tools/QRCodeGenerator', category: 'tools', keywords: ['qr', 'barcode', 'scan'] },
+      { title: 'Password Generator', description: 'Generate secure passwords', href: '/tools/PasswordGenerator',category:'tools', keywords: ['password', 'security', 'random'] },
     ],
   },
 ];
