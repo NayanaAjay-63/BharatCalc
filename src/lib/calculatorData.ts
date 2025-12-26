@@ -68,8 +68,6 @@ export const categories: Category[] = [
       { title: 'SIP Calculator', description: 'Plan your SIP investments', href: '/calculators/finance/sip', category: 'finance', keywords: ['mutual fund', 'investment', 'monthly'] },
       { title: 'Compound Interest', description: 'Calculate compound interest', href: '/calculators/finance/compound-interest', category: 'finance', keywords: ['interest', 'principal', 'rate'] },
       { title: 'Simple Interest', description: 'Calculate simple interest', href: '/calculators/finance/simple-interest', category: 'finance', keywords: ['interest', 'principal', 'rate'] },
-      { title: 'Loan Calculator', description: 'Calculate loan payments', href: '/calculators/finance/loan', category: 'finance', keywords: ['loan', 'payment', 'mortgage'] },
-      { title: 'Savings Goal Calculator', description: 'Plan your savings target', href: '/calculators/finance/savings-goal', category: 'finance', keywords: ['save', 'goal', 'target'] },
     ],
   },
   {

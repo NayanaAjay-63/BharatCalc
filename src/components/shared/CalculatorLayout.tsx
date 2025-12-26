@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Share2, Bookmark } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { AdPlaceholder } from './AdPlaceholder';
@@ -8,7 +8,7 @@ interface CalculatorLayoutProps {
   title: string;
   description: string;
   category: string;
-  categoryHref: string;
+  categoryHref?: string;
   children: React.ReactNode;
 }
 
@@ -35,13 +35,16 @@ export const CalculatorLayout: React.FC<CalculatorLayoutProps> = ({
     }
   };
 
+  const navigate = useNavigate();
+  const backHref = categoryHref || '/calculators';
+
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
         <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
         <span>/</span>
-        <Link to={categoryHref} className="hover:text-foreground transition-colors">{category}</Link>
+        <Link to={backHref} className="hover:text-foreground transition-colors">{category}</Link>
         <span>/</span>
         <span className="text-foreground">{title}</span>
       </div>
@@ -84,11 +87,9 @@ export const CalculatorLayout: React.FC<CalculatorLayoutProps> = ({
 
       {/* Back Link */}
       <div className="mt-8">
-        <Button variant="ghost" asChild>
-          <Link to={categoryHref}>
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to {category}
-          </Link>
+        <Button variant="ghost" onClick={() => navigate(-1)}>
+          <ArrowLeft className="h-4 w-4 mr-2" />
+          Back
         </Button>
       </div>
     </div>
