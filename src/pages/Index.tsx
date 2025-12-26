@@ -115,8 +115,8 @@ const categories = [
     description: 'Handy tools for everyday use.',
     icon: <Wrench className="w-6 h-6" />,
     calculators: [
-      { title: 'QR Code Generator', description: 'Generate QR codes instantly', icon: <QrCode className="w-5 h-5" />, href: '/tools/qr-generator' },
-      { title: 'Password Generator', description: 'Generate secure passwords', icon: <Key className="w-5 h-5" />, href: '/tools/password-generator' },
+      { title: 'QR Code Generator', description: 'Generate QR codes instantly', icon: <QrCode className="w-5 h-5" />, href: '/tools/QRCodeGenerator' },
+      { title: 'Password Generator', description: 'Generate secure passwords', icon: <Key className="w-5 h-5" />, href: '/tools/PasswordGenerator' },
     ],
   },
 ];
@@ -205,12 +205,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Top Ad */}
-      <div className="container mx-auto px-4 py-6">
-        <div className="flex justify-center">
-          <AdPlaceholder size="leaderboard" />
-        </div>
-      </div>
+      
 
       {/* Categories Grid */}
       <section className="container mx-auto px-4 py-8">
@@ -243,29 +238,14 @@ const Index = () => {
           ))}
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="bg-primary/5 rounded-2xl p-8 md:p-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Save Your Calculations
-          </h2>
-          <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-            Sign up to save your calculations, access history, and sync across devices.
-          </p>
-          <div className="flex justify-center gap-4">
-            <Button variant="swiss" size="lg" asChild>
-              <Link to="/signup">
-                Get Started
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <Link to="/login">Login</Link>
-            </Button>
-          </div>
+      {/* Top Ad */}
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex justify-center">
+          <AdPlaceholder size="leaderboard" />
         </div>
-      </section>
+      </div>
+
+     
     </Layout>
   );
 };
