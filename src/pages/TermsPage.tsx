@@ -1,7 +1,6 @@
-import React from "react";
 import { Layout } from "@/components/layout/Layout";
 
-const TermsAndConditions: React.FC = () => {
+const TermsPage: React.FC = () => {
   return (
     <Layout>
       <div className="container mx-auto px-4 py-10 max-w-4xl">
@@ -93,4 +92,4 @@ const TermsAndConditions: React.FC = () => {
   );
 };
 
-export default TermsAndConditions;
+export default TermsPage;
