@@ -2,89 +2,92 @@ import { Layout } from "@/components/layout/Layout";
 
 const TermsPage = () => {
   return (
-       <Layout>
+     (
+    <Layout>
       <div className="container mx-auto px-4 py-10 max-w-4xl">
         <h1 className="text-3xl md:text-4xl font-bold mb-6">
           Terms & Conditions
         </h1>
 
-        <div className="space-y-5 text-sm md:text-base text-muted-foreground leading-relaxed">
-          <p>
+        <ol className="list-decimal pl-6 space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
+          <li>
             This website is provided for <strong>informational and utility purposes only</strong>.
-          </p>
+          </li>
 
-          <p>
+          <li>
             We do not guarantee the accuracy, completeness, or reliability of any content,
-            calculations, or results available on this website.
-          </p>
+            calculations, or results provided on this website.
+          </li>
 
-          <p>
-            Users access and use this website entirely <strong>at their own risk</strong>.
-            We are not responsible for any loss or damage arising from the use of this website.
-          </p>
+          <li>
+            Users access and use this website <strong>at their own risk</strong>.
+            We are not responsible for any loss or damage arising from the use of the website.
+          </li>
 
-          <p>
-            All tools and calculators provided on this website are <strong>not professional advice</strong>,
-            including financial, legal, or medical advice. Users should consult qualified professionals
-            before making any decisions.
-          </p>
+          <li>
+            All tools and calculators available on this website do <strong>not constitute professional advice</strong>,
+            including financial, legal, or medical advice.
+          </li>
 
-          <p>
-            Advertisements displayed on this website are <strong>third-party ads</strong>.
-            We do not control, endorse, or take responsibility for their content.
-            Clicking on advertisements is the user’s responsibility.
-          </p>
+          <li>
+            Advertisements displayed on this website are <strong>third-party advertisements</strong>.
+            We do not control, endorse, or guarantee the content of such advertisements.
+          </li>
 
-          <p>
-            We do not support or promote illegal, adult, gambling, betting, or fraudulent content.
-            Any such ads are served by third-party advertising networks beyond our direct control.
-          </p>
+          <li>
+            Clicking on advertisements is entirely the user’s responsibility.
+            We shall not be liable for any loss or damage resulting from ad interactions.
+          </li>
 
-          <p>
+          <li>
+            We do not support, promote, or encourage illegal, adult, gambling, betting,
+            or fraudulent activities.
+          </li>
+
+          <li>
             This website may contain links to third-party websites.
-            We are not responsible for the content, services, or policies of external websites.
-          </p>
+            We are not responsible for the content, policies, or practices of external websites.
+          </li>
 
-          <p>
+          <li>
             We may use cookies or similar technologies for analytics and advertising purposes.
-            Users can manage or disable cookies through their browser settings.
-          </p>
+            Users may control or disable cookies through their browser settings.
+          </li>
 
-          <p>
-            Users must not misuse this website, including attempting hacking, scraping,
+          <li>
+            Users must not misuse the website, including attempting hacking, scraping,
             unauthorized access, or any form of abuse.
-          </p>
+          </li>
 
-          <p>
-            Content on this website may be updated, modified, or removed at any time
-            without prior notice.
-          </p>
+          <li>
+            Content, features, and tools on this website may be modified, updated,
+            or removed at any time without prior notice.
+          </li>
 
-          <p>
+          <li>
             We reserve the right to suspend or terminate access to the website
             if these Terms & Conditions are violated.
-          </p>
+          </li>
 
-          <p>
+          <li>
             All trademarks, logos, and brand names displayed on this website
             belong to their respective owners.
-          </p>
+          </li>
 
-          <p>
-            By using this website, you acknowledge that you have read, understood,
-            and agreed to these Terms & Conditions.
-          </p>
+          <li>
+            Use of this website signifies acceptance of these Terms & Conditions.
+          </li>
 
-          <p>
+          <li>
             Any disputes arising from the use of this website shall be governed by
             <strong> Indian laws</strong> and subject to Indian jurisdiction.
-          </p>
+          </li>
 
-          <p>
-            For any issues or complaints, users may contact us through the
-            contact options available on this website.
-          </p>
-        </div>
+          <li>
+            For any issues or complaints, users may contact us via the contact options
+            provided on the website.
+          </li>
+        </ol>
       </div>
     </Layout>
   );
